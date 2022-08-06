@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+.List {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: calc(100% + 10px);
+  background: $blue;
+  border-radius: $radiusMenuLink;
+  padding: 14px 20px;
+  min-width: 100%;
+  flex-direction: column;
+  display: flex;
+
+  @media (max-width: $tablet) {
+    position: static;
+    background: transparent;
+    padding: 10px 0;
+  }
+}
+
+
+.SubEnterActive {
+
+}
+
+.SubExitActive {
+
+}
+
+@keyframes fadeSubList {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

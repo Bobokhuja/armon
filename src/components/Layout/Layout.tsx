@@ -9,7 +9,12 @@ function Layout() {
   return (
     <div className={classes.Layout}>
       <Header mainPage={location.pathname === '/'} />
-      <Outlet />
+      <main className={classes.Main}>
+        <Outlet />
+      </main>
+      <footer>
+        Footer
+      </footer>
     </div>
   )
 }

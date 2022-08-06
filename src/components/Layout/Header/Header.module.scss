@@ -2,10 +2,57 @@
 @import "../../../styles/variables";
 
 .Header {
-  //display: flex;
+  background: #fff;
+  padding: 18.5px 0;
+
+  @media (max-width: $tabletMedium) {
+    padding: 15px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 13px 0;
+  }
 }
 
+.MainHeader {
+  box-shadow: $boxShadowCard;
+}
 
 .Wrapper {
-  @include min-max(320px, $wrapper2, 20px)
+  @include min-max(320px, $container, 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $tabletMax) {
+    @include min-max(320px, $wrapperMain, 20px)
+  }
+}
+
+.Burger {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.EnterActive {
+  animation: fadeMenu .5s forwards;
+}
+
+.ExitActive {
+  animation: fadeMenu .5s forwards alternate-reverse;
+}
+
+@keyframes fadeMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

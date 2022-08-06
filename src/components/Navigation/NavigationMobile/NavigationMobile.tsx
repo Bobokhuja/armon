@@ -1,15 +1,15 @@
-import classes from './Navigation.module.scss'
-import MenuList from './MenuList/MenuList'
+import classes from './NavigationMobile.module.scss'
 import { useState } from 'react'
-import { IMenu } from '../../models/IMenu'
-import { clientRoutes } from '../../utils/clienRoutes'
+import { IMenu } from '../../../models/IMenu'
+import { clientRoutes } from '../../../utils/clienRoutes'
+import MenuList from '../MenuList/MenuList'
 import { HandySvg } from 'handy-svg'
-import phoneIcon from '../../assets/icons/phone.svg'
-import bidIcon from '../../assets/icons/bid.svg'
+import phoneIcon from '../../../assets/icons/phone.svg'
+import Socials from '../../UI/Socials/Socials'
 
 const {contacts, freeDome, sales, salesOffices, projects, career, news, about} = clientRoutes
 
-function Navigation() {
+function NavigationMobile() {
   const [menuList] = useState<IMenu[]>([
     {
       href: about, text: 'О нас', subMenu: [
@@ -31,7 +31,7 @@ function Navigation() {
 
   return (
     <nav className={classes.Navigation}>
-      <MenuList headerMode={true} menuList={menuList}/>
+      <MenuList headerMode={true} mobile={true} menuList={menuList}/>
       <div className={classes.Icons}>
         <a
           href="tel:+992907229000"
@@ -45,22 +45,12 @@ function Navigation() {
             height={32}
             className={classes.Icon}
           />
+          +992 98 722-90-00
         </a>
-        <button
-          type="button"
-          className={classes.Bid}
-          aria-label="Оставить заявку"
-        >
-          <HandySvg
-            src={bidIcon}
-            width={32}
-            height={32}
-            className={classes.Icon}
-          />
-        </button>
       </div>
+      <Socials />
     </nav>
   )
 }
 
-export default Navigation
+export default NavigationMobile

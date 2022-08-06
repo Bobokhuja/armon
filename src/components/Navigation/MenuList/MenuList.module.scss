@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+.List {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.HeaderMode {
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    position: relative;
+    z-index: 6;
+  }
+
+  @media (max-width: $tablet) {
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+}

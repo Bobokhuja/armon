@@ -1,1 +1,9 @@
-.Layout {}
+.Layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Main {
+  flex-grow: 1;
+}

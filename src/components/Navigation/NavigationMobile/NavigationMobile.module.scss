@@ -1,0 +1,60 @@
+@import "../../../styles/variables";
+
+.Navigation {
+  background: $black4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  padding: 50px;
+  display: flex;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 40px;
+  }
+}
+
+.Icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 20px 0;
+}
+
+.Icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+.PhoneLink {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  color: $white;
+  transition: color .5s;
+
+  @media (max-width: $tabletMedium) {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+svg {
+  fill: $white;
+}

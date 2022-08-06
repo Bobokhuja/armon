@@ -1,0 +1,69 @@
+@import "../../../styles/variables";
+
+.Burger {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  width: 18px;
+  height: 12px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+
+  span {
+    width: 100%;
+    background: #000;
+    height: 2px;
+    display: block;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      background: #000;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      //transition-property: background;
+      //transition-duration: .5s;
+      transform-origin: center;
+      transform: translateY(0);
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &.Active {
+
+    span {
+      visibility: hidden;
+
+      &::before, &::after {
+        visibility: visible;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    display: inline-block;
+  }
+}
