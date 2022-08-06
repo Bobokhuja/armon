@@ -1,0 +1,53 @@
+//colors
+$black: #000;
+$black2: #080B11;
+$black3: #2B2B2B;
+$gray: rgba(0, 0, 0, .48);
+$gray2: rgba(0, 0, 0, .65);
+$gray3: rgba(8, 11, 17, .65);
+$gray4: #747278;
+$gray5: #BFBFBF;
+$white: #fff;
+$white2: rgba(255, 255, 255, .65);
+$white3: #F2F2F2;
+$blue: #0273BA;
+$blue2: #526ED3;
+$blue3: #EBEFFF;
+$orange: #F27405;
+$redOrange: #E7716A;
+$green: #267300;
+
+//box-shadows
+$boxShadowCard: 0px 4px 24px rgba(0, 0, 0, 0.12);
+$boxShadowCardHover: 0px 12px 36px rgba(0, 0, 0, 0.2);
+
+//border-radius
+
+$radiusCard: 4px;
+$radiusCardMobile: 2px;
+$radiusNews: 4px;
+$radiusNewsMobile: 4px;
+$radiusYoutube: 4px;
+$radiusYoutubeMobile: 2px;
+$radiusInstagram: 4px;
+$radiusInstagramMobile: 2px;
+$radiusImg: 4px;
+$radiusImgMobile: 2px;
+$radiusButton: 2px;
+$radiusButtonMobile: 2px;
+$radiusButtonFilter: 4px;
+$radiusButtonFilterMobile: 2px;
+$radiusButtonOutlineMobile: 2px;
+
+//viewports
+$tablet: 991px;
+$tabletMedium: 767px;
+$mobile: 471px;
+
+//container and wrappers
+$container: 1920px;
+
+$wrapperMain: 824px;
+$wrapper: 1282px;
+$wrapper2: 1254px;
+$wrapper3: 1214px;
