@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.LogoLink {
+  display: block;
+}
+
+.Logo {
+  width: 122px;
+  height: 140px;
+
+  @media (max-width: $tabletMedium) {
+    width: 103px;
+    height: 34px;
+  }
+}
