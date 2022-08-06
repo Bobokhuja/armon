@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+
+.Banner {
+  margin: 47px 0;
+}
+
+.Title {
+  @include visually-hidden;
+}

@@ -1,1 +1,8 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
 .Home {}
+
+.Wrap {
+  @include min-max(320px, $wrapperMain, 16px)
+}

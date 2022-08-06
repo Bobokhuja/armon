@@ -1,9 +1,12 @@
 import classes from './Home.module.scss'
+import Banner from '../../components/Banner/Banner'
 
 function Home() {
   return (
     <div className={classes.Home}>
-      <h1>Home</h1>
+      <div className={classes.Wrap}>
+        <Banner />
+      </div>
     </div>
   )
 }
