@@ -1,0 +1,17 @@
+.Button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    .Svg {
+      opacity: 0.5;
+    }
+  }
+}
+
+.Svg {
+  transition: all .5s;
+}

@@ -1,0 +1,111 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.Footer {
+  background: $black6;
+}
+
+.Wrap {
+  @include min-max(320px, $wrapper, 15px);
+}
+
+.Top {
+  background: $black6;
+  display: flex;
+  padding: 40px 0;
+  align-items: center;
+  justify-content: space-between;
+  color: $gray6;
+
+  @media (max-width: $tabletMedium) {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.Address {
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.Address a {
+  color: $gray4;
+  display: block;
+}
+
+.Contacts a {
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  color: $gray6;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.Socials {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.SocialTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $gray6;
+}
+
+.Bottom {
+  background: $black5;
+  padding: 20px 0;
+
+  .Wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tabletMedium) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+
+.Copyright {
+  font-size: 14px;
+  line-height: 21px;
+  color: $gray6;
+  margin: 0;
+
+  @media (max-width: $tabletMedium) {
+    margin-bottom: 20px;
+  }
+
+}
+
+.Developer {
+  display: block;
+  line-height: 0;
+  margin: 0;
+}

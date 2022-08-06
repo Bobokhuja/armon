@@ -18,3 +18,18 @@
     height: 34px;
   }
 }
+
+.FooterLogo {
+  width: 216px;
+  height: 71px;
+
+  @media (max-width: $tabletMax) {
+    width: 216px;
+    height: 71px;
+  }
+
+  @media (max-width: $tabletMedium) {
+    width: 122px;
+    height: 40px;
+  }
+}

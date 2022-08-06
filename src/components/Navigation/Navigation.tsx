@@ -1,11 +1,12 @@
 import classes from './Navigation.module.scss'
 import MenuList from './MenuList/MenuList'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { IMenu } from '../../models/IMenu'
 import { clientRoutes } from '../../utils/clienRoutes'
 import { HandySvg } from 'handy-svg'
 import phoneIcon from '../../assets/icons/phone.svg'
 import bidIcon from '../../assets/icons/bid.svg'
+import { ModalRequestContext } from '../modals/ModalRequest/context/ModalRequestContext'
 
 const {contacts, freeDome, sales, salesOffices, projects, career, news, about} = clientRoutes
 
@@ -28,6 +29,7 @@ function Navigation() {
     {href: salesOffices, text: 'Офисы продаж'},
     {href: contacts, text: 'Контакты'},
   ])
+  const requestModal = useContext(ModalRequestContext)
 
   return (
     <nav className={classes.Navigation}>
@@ -50,6 +52,7 @@ function Navigation() {
           type="button"
           className={classes.Icon}
           aria-label="Оставить заявку"
+          onClick={requestModal?.onModalShow}
         >
           <HandySvg
             src={bidIcon}

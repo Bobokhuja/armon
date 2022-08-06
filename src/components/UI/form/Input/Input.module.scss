@@ -1,0 +1,46 @@
+@import "../../../../styles/variables";
+
+.Input {
+  max-width: 451px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  display: block;
+
+  @media (max-width: $tabletMedium) {
+    margin: 20px auto;
+  }
+
+  input {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $gray2;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: $radius;
+    border: none;
+    background: #fff;
+    padding: 17px 24px;
+
+    @media (max-width: $tablet) {
+      padding: 10px 15px;
+      font-size: 20px;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+
+    @media (max-width: $tabletMedium) {
+      padding: 5px 15px;
+      font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 5px 12px;
+      font-size: 14px;
+      border-radius: $radiusMobile;
+    }
+  }
+}

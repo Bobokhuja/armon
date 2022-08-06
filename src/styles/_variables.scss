@@ -3,12 +3,16 @@ $black: #000;
 $black2: #080B11;
 $black3: #2B2B2B;
 $black4: #2b232e;
+$black5: #2C2A2F;
+$black6: #333333;
 $gray: rgba(0, 0, 0, .48);
 $gray2: rgba(0, 0, 0, .65);
 $gray3: rgba(8, 11, 17, .65);
 $gray4: #747278;
 $gray5: #737277;
 $gray6: #BFBFBF;
+$gray7: #383D45;
+$gray8: #DADADA;
 $white: #fff;
 $white2: rgba(255, 255, 255, .65);
 $white3: #F2F2F2;
@@ -25,6 +29,8 @@ $boxShadowCardHover: 0px 12px 36px rgba(0, 0, 0, 0.2);
 
 //border-radius
 
+$radius: 4px;
+$radiusMobile: 2px;
 $radiusCard: 4px;
 $radiusCardMobile: 2px;
 $radiusNews: 4px;

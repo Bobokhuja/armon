@@ -7,3 +7,22 @@
 .Main {
   flex-grow: 1;
 }
+
+.EnterActive {
+  animation: fadeModal .5s forwards;
+}
+
+.ExitActive {
+  animation: fadeModal .5s forwards alternate-reverse;
+}
+
+@keyframes fadeModal {
+  from {
+    opacity: 0;
+    //transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    //transform: translateY(0);
+  }
+}

@@ -2,20 +2,13 @@ import classes from './MenuItem.module.scss'
 import { IMenu } from '../../../../models/IMenu'
 import { NavLink } from 'react-router-dom'
 import MenuSubList from '../../MenuSubList/MenuSubList'
-import { TouchEventHandler, useEffect, useRef, useState } from 'react'
+import { TouchEventHandler, useRef, useState } from 'react'
 import clsSubList from '../../MenuSubList/MenuSubList.module.scss'
 
 function MenuItem({menu, mobile = false}: { menu: IMenu, mobile: boolean }) {
   const [isShowSubMenu, setIsShowSubMenu] = useState<boolean>(false)
   const subListRef = useRef<any>(null)
   const [link, setLink] = useState<string>(menu.href)
-
-  useEffect(() => {
-    // document.addEventListener('click', (event) => {
-    //   console.log(event.target)
-    // })
-    console.log(1)
-  }, [])
 
   const onLinkHandler: any = () => {
     if (menu.subMenu) {

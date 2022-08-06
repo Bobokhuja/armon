@@ -2,19 +2,13 @@ import classes from './Header.module.scss'
 import Logo from '../../Logo/Logo'
 import Navigation from '../../Navigation/Navigation'
 import Burger from '../../UI/Burger/Burger'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import NavigationMobile from '../../Navigation/NavigationMobile/NavigationMobile'
 import { CSSTransition } from 'react-transition-group'
 
 function Header({mainPage = false}: { mainPage?: boolean }) {
   const [isShowMenu, setIsShowMenu] = useState<boolean>(false)
   const [isMobile] = useState(window.screen.availWidth < 992)
-
-  console.log(isMobile)
-
-  // useEffect(() => {
-  //
-  // })
 
   const cls = [
     classes.Header,
