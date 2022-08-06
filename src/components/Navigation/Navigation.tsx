@@ -35,7 +35,7 @@ function Navigation() {
       <div className={classes.Icons}>
         <a
           href="tel:+992907229000"
-          className={classes.PhoneLink}
+          className={classes.Icon}
           aria-label="Звонить на номер"
           data-phone="+992 98 722-90-00"
         >
@@ -43,19 +43,19 @@ function Navigation() {
             src={phoneIcon}
             width={32}
             height={32}
-            className={classes.Icon}
+            className={classes.Svg}
           />
         </a>
         <button
           type="button"
-          className={classes.Bid}
+          className={classes.Icon}
           aria-label="Оставить заявку"
         >
           <HandySvg
             src={bidIcon}
             width={32}
             height={32}
-            className={classes.Icon}
+            className={classes.Svg}
           />
         </button>
       </div>

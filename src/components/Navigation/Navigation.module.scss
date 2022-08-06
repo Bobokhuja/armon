@@ -36,75 +36,24 @@
 }
 
 .Icon {
-  width: 32px;
-  height: 32px;
-}
-
-.PhoneLink {
   display: inline-block;
   line-height: 0;
   margin-right: 10px;
   text-decoration: none;
-
-  &:hover {
-    svg {
-      fill: rgba(0, 0, 0, .65);
-    }
-  }
-
-  &::after {
-    content: attr(data-phone);
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 28px;
-    color: $white;
-    padding: 15px 12px;
-    transition: color .5s;
-    display: none;
-
-    @media (max-width: $tabletMedium) {
-      font-size: 22px;
-      line-height: 27px;
-    }
-
-    @media (max-width: $mobile) {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-
-  svg {
-    fill: $black;
-  }
-
-  @media (max-width: $tablet) {
-    display: flex;
-    align-items: center;
-
-    svg {
-      fill: $white;
-    }
-
-    &::after {
-      display: block;
-    }
-  }
-}
-
-.Bid {
   cursor: pointer;
   background: none;
   border: none;
   padding: 0;
-  line-height: 0;
 
   &:hover {
-    svg {
+    .Icon {
       fill: rgba(0, 0, 0, .65);
     }
   }
+}
 
-  @media (max-width: $tablet) {
-    display: none;
-  }
+.Svg {
+  width: 32px;
+  height: 32px;
+  fill: $black;
 }
