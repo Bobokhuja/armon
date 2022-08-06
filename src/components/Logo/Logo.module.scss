@@ -5,8 +5,13 @@
 }
 
 .Logo {
-  width: 122px;
-  height: 140px;
+  width: 216px;
+  height: 71px;
+
+  @media (max-width: $tabletMax) {
+    width: 122px;
+    height: 40px;
+  }
 
   @media (max-width: $tabletMedium) {
     width: 103px;

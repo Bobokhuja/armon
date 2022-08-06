@@ -1,1 +1,11 @@
-.Header {}
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.Header {
+  //display: flex;
+}
+
+
+.Wrapper {
+  @include min-max(320px, $wrapper2, 20px)
+}
