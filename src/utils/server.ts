@@ -1,0 +1,1 @@
+export const serverApi: string = 'https://api.armon.tj'

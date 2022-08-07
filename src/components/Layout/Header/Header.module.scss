@@ -4,6 +4,7 @@
 .Header {
   background: #fff;
   padding: 18.5px 0;
+  box-shadow: $boxShadowCard;
 
   @media (max-width: $tabletMedium) {
     padding: 15px 0;
@@ -15,7 +16,7 @@
 }
 
 .MainHeader {
-  box-shadow: $boxShadowCard;
+  box-shadow: none;
 }
 
 .Wrapper {

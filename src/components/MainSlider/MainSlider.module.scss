@@ -1,0 +1,33 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.MainSlider {
+  @include min-max(320px, $container, 0);
+}
+
+.Title {
+  @include visually-hidden;
+}
+
+.Slider {
+  //height: auto;
+}
+
+.Slide {
+  height: 85vh;
+  min-height: 900px;
+
+  @media (max-width: $tabletMax) {
+    //height: 85vh;
+    max-height: 700px;
+    min-height: auto;
+  }
+  //
+  //@media (max-width: $tabletMedium) {
+  //  height: 640px;
+  //}
+  //
+  @media (max-width: $mobile) {
+    height: 468px;
+  }
+}

@@ -5,6 +5,7 @@ import Burger from '../../UI/Burger/Burger'
 import { useState } from 'react'
 import NavigationMobile from '../../Navigation/NavigationMobile/NavigationMobile'
 import { CSSTransition } from 'react-transition-group'
+import { useLocation } from 'react-router-dom'
 
 function Header({mainPage = false}: { mainPage?: boolean }) {
   const [isShowMenu, setIsShowMenu] = useState<boolean>(false)
