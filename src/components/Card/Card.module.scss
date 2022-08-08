@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Card {
+  border-radius: $radiusCard;
+  box-shadow: $boxShadowCard;
+  overflow: hidden;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  width: 392px;
+  min-height: 424px;
+
+  &:hover {
+    box-shadow: $boxShadowCardHover;
+  }
+
+  @media (max-width: $tablet) {
+    width: 360px;
+  }
+
+  @media (max-width: $tabletMedium) {
+    width: 340px;
+  }
+
+  @media (max-width: $mobile) {
+    border-radius: $radiusCardMobile;
+    margin: 40px 0;
+  }
+}
+
+.ImgWrapper {
+  height: 220px;
+}
+
+.Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Info {
+  padding: 20px;
+}

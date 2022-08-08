@@ -7,7 +7,7 @@
   transition: all .5s;
   box-shadow: $boxShadowCard;
   cursor: pointer;
-  max-width: 248px;
+  max-width: 100%;
   margin: 0 auto;
   flex-grow: 1;
 
@@ -16,14 +16,8 @@
   }
 
   @media (max-width: $tabletMedium) {
-    max-width: 170px;
-    padding: 9px 12px;
-  }
-
-  @media (max-width: $mobile) {
-    border-radius: $radiusCardMobile;
-    max-width: 156px;
-    box-sizing: border-box;
+    max-width: 100%;
+    padding: 12px 20px;
   }
 
   @media (max-width: $mobile) {

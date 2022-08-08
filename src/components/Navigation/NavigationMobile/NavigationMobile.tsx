@@ -1,7 +1,7 @@
 import classes from './NavigationMobile.module.scss'
 import { useState } from 'react'
 import { IMenu } from '../../../models/IMenu'
-import { clientRoutes } from '../../../utils/clienRoutes'
+import { clientRoutes } from '../../../utils/constants/clienRoutes'
 import MenuList from '../MenuList/MenuList'
 import { HandySvg } from 'handy-svg'
 import phoneIcon from '../../../assets/icons/phone.svg'

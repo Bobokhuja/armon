@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Projects {}
+
+.Title {
+  @include section-header;
+}
+
+.Subtitle {
+  @include section-subtitle;
+}

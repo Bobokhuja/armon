@@ -1,0 +1,74 @@
+@import "../../../../styles/variables";
+
+.Item {
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
+
+  &:last-of-type {
+    margin-left: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .Card {
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      width: auto;
+    }
+  }
+
+  @media (max-width: $tabletMedium) {
+    &:first-of-type {
+      margin-right: 0;
+    }
+
+    &:last-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.Address {
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+  color: $gray;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: $black2;
+  margin: 8px 0 4px;
+
+  @media (max-width: $tabletMedium) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.Description {
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray3;
+
+  @media (max-width: $tabletMedium) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  p {
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+}

@@ -19,7 +19,7 @@ function BannerList({bannerList}: { bannerList: IBanner[] }) {
             spaceBetween: 40
           },
           767: {
-            spaceBetween: 25
+            spaceBetween: 40,
           },
           471: {
             spaceBetween: 10

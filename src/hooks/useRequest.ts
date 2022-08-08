@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { serverApi } from '../utils/server'
+import { serverApi } from '../utils/constants/server'
 
 function useRequest(url: string) {
   const [data, setData] = useState<any[]>([])
