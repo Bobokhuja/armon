@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.MainVideo {
+  margin: 40px 0;
+}
+
+.Title {
+  @include section-header;
+}
+
+.SubTitle {
+  @include section-subtitle;
+}

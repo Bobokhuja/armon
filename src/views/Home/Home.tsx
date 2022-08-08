@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner'
 import MainSlider from '../../components/MainSlider/MainSlider'
 import MainProjects from '../../components/MainProjects/MainProjects'
 import MainNews from '../../components/MainNews/MainNews'
+import MainVideo from '../../components/MainVideo/MainVideo'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <Banner />
         <MainProjects />
         <MainNews />
+        <MainVideo />
       </div>
     </div>
   )
