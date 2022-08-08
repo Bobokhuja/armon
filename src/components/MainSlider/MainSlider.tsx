@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { ISlider } from '../../models/ISlider'
 import MainSliderItem from './MainSliderItem/MainSliderItem'
 import useRequest from '../../hooks/useRequest'
+import { Autoplay, EffectFade } from 'swiper'
 
 function MainSlider() {
   const [sliders] = useRequest('/get_slider?page=1')
@@ -17,6 +18,10 @@ function MainSlider() {
         slidesPerView={1}
         spaceBetween={20}
         className={classes.Slider}
+        autoplay={{
+          delay: 5000
+        }}
+        modules={[Autoplay]}
       >
 
         {sliders.map((slide: any) =>
