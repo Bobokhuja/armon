@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "//bobokhuja.github.io/armon/build/static/css/main.e8e2f4ef.css",
-    "main.js": "//bobokhuja.github.io/armon/build/static/js/main.69eec043.js",
-    "static/media/logo.svg": "//bobokhuja.github.io/armon/build/static/media/logo.8315651828e25b5ecd118583291615b2.svg",
-    "static/media/logo-footer.svg": "//bobokhuja.github.io/armon/build/static/media/logo-footer.6d994ecd4bc3821798f149ebc7dcefac.svg",
-    "static/media/developed bobo.svg": "//bobokhuja.github.io/armon/build/static/media/developed bobo.04c6849a91952b45e3170f64b32787ff.svg",
-    "static/media/trade.svg": "//bobokhuja.github.io/armon/build/static/media/trade.e9ad11edf8d3a3cb39941e8b007eae70.svg",
-    "static/media/operator.svg": "//bobokhuja.github.io/armon/build/static/media/operator.15db2af6ac285780d7df6dc8c2e34b7e.svg",
-    "static/media/installment.svg": "//bobokhuja.github.io/armon/build/static/media/installment.0e240739a61bea86047a9404b3beee73.svg",
-    "static/media/instagram.svg": "//bobokhuja.github.io/armon/build/static/media/instagram.efef7bf679c31e9a042cc49955c56781.svg",
-    "static/media/bid.svg": "//bobokhuja.github.io/armon/build/static/media/bid.189255d11182b9fa6fb1c8dbd1f12047.svg",
-    "static/media/whatsapp.svg": "//bobokhuja.github.io/armon/build/static/media/whatsapp.91a1961c6c7b81b63f58918d03086d35.svg",
-    "static/media/youtube.svg": "//bobokhuja.github.io/armon/build/static/media/youtube.876cb29ce27d1dcdf05bf9849e801fc7.svg",
-    "static/media/phone.svg": "//bobokhuja.github.io/armon/build/static/media/phone.428838ac84c6b3950cdc9d378d5db4bf.svg",
-    "index.html": "//bobokhuja.github.io/armon/build/index.html",
-    "static/media/close.svg": "//bobokhuja.github.io/armon/build/static/media/close.790e81ee8f014e60408d106eee9f30ac.svg",
-    "static/media/telegram.svg": "//bobokhuja.github.io/armon/build/static/media/telegram.ead1e87d5de58c13f88b91ec48da2b33.svg",
-    "static/media/arrow-left.svg": "//bobokhuja.github.io/armon/build/static/media/arrow-left.0e6a72ca58ab7c03f102.svg",
-    "static/media/arrow-right.svg": "//bobokhuja.github.io/armon/build/static/media/arrow-right.43df8f3a04f9a417db04.svg",
-    "static/media/facebook.svg": "//bobokhuja.github.io/armon/build/static/media/facebook.b4244e5bf23c1cfc03970d30b042720a.svg",
-    "main.e8e2f4ef.css.map": "//bobokhuja.github.io/armon/build/static/css/main.e8e2f4ef.css.map",
-    "main.69eec043.js.map": "//bobokhuja.github.io/armon/build/static/js/main.69eec043.js.map"
+    "main.css": "/armon/build/static/css/main.04861b3d.css",
+    "main.js": "/armon/build/static/js/main.ab1df379.js",
+    "static/media/logo.svg": "/armon/build/static/media/logo.8315651828e25b5ecd118583291615b2.svg",
+    "static/media/logo-footer.svg": "/armon/build/static/media/logo-footer.6d994ecd4bc3821798f149ebc7dcefac.svg",
+    "static/media/developed bobo.svg": "/armon/build/static/media/developed bobo.04c6849a91952b45e3170f64b32787ff.svg",
+    "static/media/trade.svg": "/armon/build/static/media/trade.e9ad11edf8d3a3cb39941e8b007eae70.svg",
+    "static/media/operator.svg": "/armon/build/static/media/operator.15db2af6ac285780d7df6dc8c2e34b7e.svg",
+    "static/media/installment.svg": "/armon/build/static/media/installment.0e240739a61bea86047a9404b3beee73.svg",
+    "static/media/instagram.svg": "/armon/build/static/media/instagram.efef7bf679c31e9a042cc49955c56781.svg",
+    "static/media/bid.svg": "/armon/build/static/media/bid.189255d11182b9fa6fb1c8dbd1f12047.svg",
+    "static/media/whatsapp.svg": "/armon/build/static/media/whatsapp.91a1961c6c7b81b63f58918d03086d35.svg",
+    "static/media/youtube.svg": "/armon/build/static/media/youtube.876cb29ce27d1dcdf05bf9849e801fc7.svg",
+    "static/media/phone.svg": "/armon/build/static/media/phone.428838ac84c6b3950cdc9d378d5db4bf.svg",
+    "static/media/close.svg": "/armon/build/static/media/close.790e81ee8f014e60408d106eee9f30ac.svg",
+    "index.html": "/armon/build/index.html",
+    "static/media/telegram.svg": "/armon/build/static/media/telegram.ead1e87d5de58c13f88b91ec48da2b33.svg",
+    "static/media/arrow-left.svg": "/armon/build/static/media/arrow-left.0e6a72ca58ab7c03f102.svg",
+    "static/media/arrow-right.svg": "/armon/build/static/media/arrow-right.43df8f3a04f9a417db04.svg",
+    "static/media/facebook.svg": "/armon/build/static/media/facebook.b4244e5bf23c1cfc03970d30b042720a.svg",
+    "main.04861b3d.css.map": "/armon/build/static/css/main.04861b3d.css.map",
+    "main.ab1df379.js.map": "/armon/build/static/js/main.ab1df379.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8e2f4ef.css",
-    "static/js/main.69eec043.js"
+    "static/css/main.04861b3d.css",
+    "static/js/main.ab1df379.js"
   ]
 }

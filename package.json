@@ -2,7 +2,7 @@
   "name": "armon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://https://bobokhuja.github.io/armon/build/",
+  "homepage": "https://bobokhuja.github.io/armon/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
