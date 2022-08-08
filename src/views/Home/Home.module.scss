@@ -4,5 +4,6 @@
 .Home {}
 
 .Wrap {
-  @include min-max(320px, $wrapperMain, 16px)
+  //@include min-max(320px, $wrapperMain, 16px)
+  @include wrapper($wrapperTabletMax);
 }

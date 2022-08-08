@@ -11,7 +11,8 @@ function MainProjectItem({project}: {project: IProject}) {
       <Card
         img={project.img}
         classNames={{
-          card: classes.Card
+          card: classes.Card,
+          img: classes.Img
         }}
       >
         <p className={classes.Address}>{project.address}</p>

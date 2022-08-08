@@ -1,6 +1,7 @@
 @import "../../../../styles/variables";
 
 .Item {
+  width: 100%;
 
   &:first-of-type {
     margin-right: 20px;
@@ -19,6 +20,14 @@
     @media (max-width: $tablet) {
       max-width: 100%;
       width: auto;
+    }
+
+
+
+    .Img {
+      @media (max-width: $tabletMedium) {
+        height: 250px;
+      }
     }
   }
 

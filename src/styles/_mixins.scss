@@ -89,3 +89,25 @@
     line-height: 29px;
   }
 }
+
+// wrappers
+
+@mixin wrapper($startViewport) {
+  @include min-max(320px, $startViewport, 16px);
+
+  @media (max-width: $tabletMax) {
+    @include min-max(320px, $wrapperTabletMax, 16px);
+  }
+
+  @media (max-width: $tablet) {
+    @include min-max(320px, $wrapperTabletMax, 16px);
+  }
+
+  @media (max-width: $tabletMedium) {
+    @include min-max(320px, $wrapperTabletMedium, 16px);
+  }
+
+  @media (max-width: $mobile) {
+    @include min-max(320px, $wrapperMobile, 16px);
+  }
+}

@@ -20,6 +20,7 @@ function BannerList({bannerList}: { bannerList: IBanner[] }) {
           },
           767: {
             spaceBetween: 40,
+            // slidesPerView: 2
           },
           471: {
             spaceBetween: 10
