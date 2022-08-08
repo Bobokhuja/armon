@@ -32,6 +32,8 @@
   }
 
   @media (max-width: $tabletMedium) {
+    margin-bottom: 40px;
+
     &:first-of-type {
       margin-right: 0;
     }

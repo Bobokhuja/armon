@@ -1,8 +1,14 @@
+@import "../../../styles/variables";
+
 .List {
 }
 
 .Slider {
   height: 250px;
+
+  @media (max-width: $tabletMedium) {
+    height: 150px;
+  }
 }
 
 .Slide {

@@ -22,11 +22,6 @@
   @media (max-width: $tabletMedium) {
     width: 340px;
   }
-
-  @media (max-width: $mobile) {
-    border-radius: $radiusCardMobile;
-    margin: 40px 0;
-  }
 }
 
 .ImgWrapper {

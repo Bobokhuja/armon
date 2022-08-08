@@ -24,9 +24,6 @@ function BannerList({bannerList}: { bannerList: IBanner[] }) {
           },
           471: {
             spaceBetween: 10
-          },
-          320: {
-            spaceBetween: 0
           }
         }}
         className={classes.Slider}
