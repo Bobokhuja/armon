@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
 import 'swiper/css'
+import { Autoplay } from 'swiper'
 
 function BannerList({bannerList}: { bannerList: IBanner[] }) {
   return (
@@ -13,6 +14,10 @@ function BannerList({bannerList}: { bannerList: IBanner[] }) {
         spaceBetween={10}
         slidesPerView={2}
         effect="flip"
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 1000
+        }}
         breakpoints={{
           992: {
             slidesPerView: 3,

@@ -17,13 +17,6 @@ function Banner() {
       textLite: 'ответы на вопросы'
     },
     {title: 'Trade-in', text: 'на выгодных условиях', color: 'green', svg: tradeIcon, textLite: 'на выгодных условиях'},
-    {
-      title: 'Trade-out',
-      text: 'на выгодных условиях',
-      color: 'green',
-      svg: tradeIcon,
-      textLite: 'на выгодных условиях'
-    },
   ])
   return (
     <section className={classes.Banner}>
