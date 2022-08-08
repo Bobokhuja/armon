@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Link {
+  text-decoration: none;
+}
+
+.NewsCard {
+  background: $white;
+  padding: 20px;
+  border: 1px solid $gray9;
+  border-radius: $radiusNews;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  @media (max-width: $mobile) {
+    border-radius: $radiusNewsMobile;
+  }
+}
+
+.Title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: $black;
+  margin-top: 0;
+  margin-bottom: 6px;
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+}
+
+.Text {
+  font-size: 12px;
+  line-height: 20px;
+  color: $gray3;
+  margin-top: 6px;
+  margin-bottom: 12px;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.Date {
+  color: $blueOpacity;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+  margin-top: auto;
+}

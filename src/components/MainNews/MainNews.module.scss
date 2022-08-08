@@ -1,19 +1,14 @@
-@import "../../styles/variables";
 @import "../../styles/mixins";
+@import "../../styles/variables";
 
-.Projects {
+.MainNews {
   margin: 40px 0;
-
-  .ButtonMore {
-    margin-left: auto;
-    display: block;
-  }
 }
 
 .Title {
   @include section-header;
 }
 
-.Subtitle {
+.SubTitle {
   @include section-subtitle;
 }

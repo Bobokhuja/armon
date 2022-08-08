@@ -5,6 +5,12 @@ import { useEffect, useState } from 'react'
 import { IProject } from '../../models/IProject'
 import { http } from '../../utils/helpers/http'
 import MainProjectList from './MainProjectList/MainProjectList'
+import ButtonMore from '../UI/ButtonMore/ButtonMore'
+import { Link } from 'react-router-dom'
+
+import {clientRoutes} from '../../utils/constants/clienRoutes'
+
+const {projects: projectLink} = clientRoutes
 
 function MainProjects() {
   const [projects, setProjects] = useState<IProject[]>([])
@@ -21,6 +27,14 @@ function MainProjects() {
       <p className={classes.Subtitle}>Узнайте подробнее о наших проектах</p>
 
       <MainProjectList projectList={projects} />
+      <ButtonMore
+        className={classes.ButtonMore}
+      >
+        <Link to={projectLink}>
+          Все проекты
+        </Link>
+
+      </ButtonMore>
     </section>
   )
 }

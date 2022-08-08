@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.ButtonMore {
+  font-family: 'Manrope', sans-serif;
+  color: $blue2;
+  border-radius: $radiusButton;
+  padding: 6px;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 20px;
+  border: none;
+  background: none;
+  min-width: 144px;
+  transition: all .5s;
+  cursor: pointer;
+  margin: 20px 0;
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+    color: $blue2;
+  }
+
+  &:hover {
+    background: $blue3;
+  }
+
+  @media (max-width: $mobile) {
+    border-radius: $radiusButtonMobile;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../../styles/variables";
+
+.Item {
+  max-width: 248px;
+  height: 197px;
+
+  @media (max-width: $tabletMedium) {
+    //width: 270px;
+    max-width: none;
+  }
+}
+
+.Card {
+  height: 100%;
+}

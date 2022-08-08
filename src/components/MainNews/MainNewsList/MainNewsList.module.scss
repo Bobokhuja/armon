@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+
+.List {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.Slider {
+  height: 197px;
+}
+
+.Slide {
+  @media (max-width: $tabletMedium) {
+    width: 70%;
+  }
+}
