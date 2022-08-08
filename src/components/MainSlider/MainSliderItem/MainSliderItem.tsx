@@ -6,7 +6,12 @@ function MainSliderItem({slide}: { slide: ISlider }) {
   return (
     <div className={classes.Item}>
       <picture>
-        <source media="(max-width: 767px)" srcSet={slide.imgMobile}/>
+        {
+          (slide.imgMobile.endsWith('.jpg') ||
+          slide.imgMobile.endsWith('.png')) && (
+            <source media="(max-width: 767px)" srcSet={slide.imgMobile}/>
+          )
+        }
         <source media="(max-width: 768px)" src={classes.Img}/>
         <img className={classes.Img} src={slide.img} alt={slide.title}/>
       </picture>
