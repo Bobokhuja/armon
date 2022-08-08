@@ -16,7 +16,7 @@ interface INewsCard {
 
 function NewsCard({dateType, news, classNames}: INewsCard) {
 
-  let date = new Date(news.data).toLocaleDateString()
+  let date = new Date(news.data).toLocaleDateString('ru-RU')
   if (dateType === 'locale')
     date = new Date('Fri, 26 Mar 2021 11:22:47 GMT')
       .toLocaleDateString('ru-Ru', {day: 'numeric', month: 'long', year: 'numeric'})
