@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 import {clientRoutes} from '../../utils/constants/clienRoutes'
 
-const {projects: projectLink} = clientRoutes
+const {projects: projectRoute} = clientRoutes
 
 function MainProjects() {
   const [projects, setProjects] = useState<IProject[]>([])
@@ -30,7 +30,7 @@ function MainProjects() {
       <ButtonMore
         className={classes.ButtonMore}
       >
-        <Link to={projectLink}>
+        <Link to={projectRoute}>
           Все проекты
         </Link>
 

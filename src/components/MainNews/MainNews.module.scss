@@ -3,6 +3,15 @@
 
 .MainNews {
   margin: 40px 0;
+
+  .ButtonMore {
+    margin-left: auto;
+    display: block;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
 }
 
 .Title {

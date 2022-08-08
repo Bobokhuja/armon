@@ -17,10 +17,11 @@ function MainNewsList({newsList}: { newsList: INews[] }) {
             slidesPerView: 3
           },
           771: {
-            spaceBetween: 10,
+            spaceBetween: 20,
             slidesPerView: 3,
           },
           320: {
+            spaceBetween: 16,
             slidesPerView: 'auto'
           }
         }}

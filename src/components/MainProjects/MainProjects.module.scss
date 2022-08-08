@@ -7,6 +7,10 @@
   .ButtonMore {
     margin-left: auto;
     display: block;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 }
 

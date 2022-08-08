@@ -3,6 +3,12 @@ import MainNewsList from './MainNewsList/MainNewsList'
 import { useEffect, useState } from 'react'
 import { INews } from '../../models/INews'
 import { http } from '../../utils/helpers/http'
+import { Link } from 'react-router-dom'
+import ButtonMore from '../UI/ButtonMore/ButtonMore'
+
+import {clientRoutes} from '../../utils/constants/clienRoutes'
+
+const {news: newsRoute} = clientRoutes
 
 function MainNews() {
   const [news, setNews] = useState<INews[]>([])
@@ -18,6 +24,14 @@ function MainNews() {
       <p className={classes.SubTitle}>Будьте в курсе последних новостей</p>
 
       <MainNewsList newsList={news}/>
+      <ButtonMore
+        className={classes.ButtonMore}
+      >
+        <Link to={newsRoute}>
+          Все новости
+        </Link>
+
+      </ButtonMore>
     </section>
   )
 }
